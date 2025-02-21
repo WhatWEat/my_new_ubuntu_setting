@@ -41,10 +41,10 @@ elif [ "$choice" == "2" ]; then
     source ~/.profile
 elif [ "$choice" == "3" ]; then
     # 创建软链接，将 conda 和 mamba 添加到 ~/.local/bin
-    chmod +x ~/.local/bin/conda
-    chmod +x ~/.local/bin/mamba
     ln -sf ~/miniforge3/bin/conda ~/.local/bin/conda
     ln -sf ~/miniforge3/bin/mamba ~/.local/bin/mamba
+    chmod +x ~/.local/bin/conda
+    chmod +x ~/.local/bin/mamba
     echo "已创建 conda 和 mamba 的软链接到 ~/.local/bin。"
 else
     echo "无效选项，退出。"
