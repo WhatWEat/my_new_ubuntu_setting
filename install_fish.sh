@@ -22,7 +22,7 @@ if [ "$choice" = "1" ]; then
     chsh -s /usr/bin/fish
 
     # 安装 Oh My Fish (OMF)
-    curl -L https://get.oh-my.fish | fish
+    curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
     fish -c "omf install agnoster"
     fish -c "omf theme agnoster"
